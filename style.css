@@ -1,0 +1,11 @@
+#container {
+  display: flex;
+  width: fit-content;
+  border: 1px solid blue;
+}
+
+.grid-cell {
+  width: 25px;
+  height: 25px;
+  border: 1px solid blue;
+}

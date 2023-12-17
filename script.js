@@ -8,7 +8,7 @@ function createGrid(size) {
     for (let j = 1; j <= size; j++) {
       let cell = document.createElement("div");
       cell.className = "grid-cell";
-      cell.innerText = (i * size) + j;
+      // cell.innerText = (i * size) + j;
       row.appendChild(cell);
     }
 
@@ -16,4 +16,4 @@ function createGrid(size) {
   }
 }
 
-createGrid(5);
+createGrid(16);
