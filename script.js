@@ -8,7 +8,6 @@ function createGrid(size) {
     for (let j = 1; j <= size; j++) {
       let cell = document.createElement("div");
       cell.className = "grid-cell";
-      // cell.innerText = (i * size) + j;
       row.appendChild(cell);
     }
 
@@ -17,3 +16,12 @@ function createGrid(size) {
 }
 
 createGrid(16);
+
+const grid = document.getElementById("container");
+
+grid.addEventListener("mouseover", e => {
+  if (e.target && e.target.matches(".grid-cell")) {
+    const hoveredCell = e.target;
+    hoveredCell.style.backgroundColor = "red"
+  }
+});
